@@ -10,8 +10,10 @@ Usage
 -----
 
 HTML:
+
 	<img class="input" data-default="unknown.png">
 
 JavaScript:
+
 	$('img.input').imageInput();
  
