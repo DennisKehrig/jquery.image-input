@@ -1,9 +1,17 @@
-jQuery: Mark
-============
+jQuery: Image Input
+===================
 
-Adds an ugly outline to selected elements - a convenient way to test selectors
+Turns an image into a widget to select and display an image (JPEG only) based on data URLs (useful for AJAX-based forms).
+Use Drag & Drop or click on the image / press the space bar while it is focused.
+
+Note: Uses the HTML 5 FileReader API provided by Firefox and Chrome (not Safari)
 
 Usage
 -----
-	// Mark all DIV nodes that are the first child of their parent
-	$('div:first-child').mark();
+
+HTML:
+	<img class="input" data-default="unknown.png">
+
+JavaScript:
+	$('img.input').imageInput();
+ 
